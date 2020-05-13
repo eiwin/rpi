@@ -66,7 +66,8 @@ https://pyserial.readthedocs.io/en/latest/pyserial_api.html
 virtual enviroment
 https://www.techcoil.com/blog/how-to-use-python-3-virtual-environments-to-run-python-3-applications-on-your-raspberry-pi/
 
-
+change the baud rate of I2C
+https://www.raspberrypi-spy.co.uk/2018/02/change-raspberry-pi-i2c-bus-speed/
   
 
 
