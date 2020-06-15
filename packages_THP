@@ -1,0 +1,11 @@
+# GPIO
+sudo apt-get install rpi.gpio
+
+# serial
+sudo apt-get install python3-serial
+
+# pip3
+sudo apt-get install python3-pip
+
+# bme280
+sudo pip3 install adafruit-circuitpython-bme280
