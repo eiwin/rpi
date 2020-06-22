@@ -9,3 +9,12 @@ sudo apt-get install python3-pip
 
 # bme280
 sudo pip3 install adafruit-circuitpython-bme280
+
+
+
+-------------------------------------------------------
+
+Issue: i2cdetect command not found
+sudo apt-get update
+sudo apt-get install i2c-tools
+
