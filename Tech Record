@@ -1,5 +1,7 @@
 RPI  
 
+# display backgroudn application
+sudo ps -ax | grep python
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
