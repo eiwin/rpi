@@ -18,3 +18,26 @@ Issue: i2cdetect command not found
 sudo apt-get update
 sudo apt-get install i2c-tools
 
+#pigpio PWM
+sudo apt-get install python3-pigpio
+udo systemctl enable pigpiod
+
+will enable it to auto-start on boot.
+
+sudo systemctl start pigpiod 
+
+will start it immediately (just a posh way of doing
+
+sudo pigpiod
+
+:)
+
+If you change your mind,
+
+sudo systemctl disable pigpiod
+
+will undo the start-up behaviour. Similarly,
+
+sudo systemctl stop pigpiod
+
+will have an immediate effect.
