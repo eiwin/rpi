@@ -4,6 +4,9 @@ RPI
 sudo ps -ax | grep python
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+DS3231 RTC config
+https://thepihut.com/blogs/raspberry-pi-tutorials/17209332-adding-a-real-time-clock-to-your-raspberry-pi
+
 pigpio auto start
 https://raspberrypi.stackexchange.com/questions/70568/how-to-run-pigpiod-on-boot
 
