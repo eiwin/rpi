@@ -4,6 +4,8 @@ RPI
 sudo ps -ax | grep python
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+pigpio auto start
+https://raspberrypi.stackexchange.com/questions/70568/how-to-run-pigpiod-on-boot
 
 Flash burn
 https://www.balena.io/etcher/
