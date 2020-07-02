@@ -16,9 +16,12 @@ Download
 https://www.raspberrypi.org/downloads/raspbian/
 
 Build ftp server 
-
-
 https://www.raspberrypi.org/documentation/remote-access/ftp.md 
+
+Open the rc.local file:
+sudo nano /etc/rc.local
+Insert your script or service just before the “exit 0” line
+Something like this:
 
 
 SAMBA 
