@@ -1,5 +1,14 @@
 RPI  
 
+sudo systemctl disable avahi-daemon
+sudo systemctl disable triggerhappy
+sudo systemctl disable raspi-config.service
+sudo systemctl disable keyboard-setup.service
+sudo systemctl disable dphys-swapfile.service
+sudo systemctl disable systemd-timesyncd
+sudo systemctl disable rpi-eeprom-update
+sudo systemctl disable systemd-timesyncd.service
+
 # display backgroudn application
 sudo ps -ax | grep python
 
