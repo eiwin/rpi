@@ -34,6 +34,8 @@ sudo nano /etc/rc.local
 Insert your script or service just before the “exit 0” line
 Something like this:
 
+How to Run a Raspberry Pi Program on Startup
+https://www.digikey.ca/en/maker/projects/how-to-run-a-raspberry-pi-program-on-startup/cc16cb41a3d447b8aaacf1da14368b13?utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_RLSA&utm_term=&productid=&gclid=EAIaIQobChMI_d-dlL7D6gIVy9SzCh0tdgv9EAAYASAAEgK18_D_BwE
 
 SAMBA 
 
