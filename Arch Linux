@@ -1,0 +1,18 @@
+#Installation Raspberry Pi
+https://archlinuxarm.org/platforms/armv6/raspberry-pi
+
+https://archlinuxarm.org/packages
+
+#WiFi on Pi3 / Arch [FIXED]
+https://www.raspberrypi.org/forums/viewtopic.php?t=150180
+
+
+
+#Installing Python RPi Libraries in Arch Linux
+pacman -S python python-pip gcc
+pip install RPi.GPIO
+
+#many corrupted packages/invalid PGP signatures for aarch64
+https://archlinuxarm.org/forum/viewtopic.php?f=65&t=12796
+Followup to myself: I repeated the "pacman-key --init" and the "pacman-key --populate archlinuxarm" commands again, 
+and now I am able to install packages. So I guess I just screwed something up in originally setting up keys.
