@@ -20,7 +20,7 @@ sudo apt-get install i2c-tools
 
 #pigpio PWM
 sudo apt-get install python3-pigpio
-udo systemctl enable pigpiod
+sudo systemctl enable pigpiod
 
 will enable it to auto-start on boot.
 
