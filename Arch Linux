@@ -16,3 +16,6 @@ pip install RPi.GPIO
 https://archlinuxarm.org/forum/viewtopic.php?f=65&t=12796
 Followup to myself: I repeated the "pacman-key --init" and the "pacman-key --populate archlinuxarm" commands again, 
 and now I am able to install packages. So I guess I just screwed something up in originally setting up keys.
+
+
+https://www.raspberrypi.org/forums/viewtopic.php?t=7626
