@@ -1,13 +1,23 @@
 RPI  
+systemd
+https://www.samplerbox.org/article/fastbootrpi
+https://www.digikey.ca/en/maker/projects/how-to-run-a-raspberry-pi-program-on-startup/cc16cb41a3d447b8aaacf1da14368b13?utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_RLSA&utm_term=&productid=&gclid=EAIaIQobChMI_d-dlL7D6gIVy9SzCh0tdgv9EAAYASAAEgK18_D_BwE
+https://kevinsaye.wordpress.com/2020/02/18/fast-booting-raspbian-on-a-pi-3-in-less-than-8-secon/
 
-sudo systemctl disable avahi-daemon
-sudo systemctl disable triggerhappy
-sudo systemctl disable raspi-config.service
-sudo systemctl disable keyboard-setup.service
-sudo systemctl disable dphys-swapfile.service
-sudo systemctl disable systemd-timesyncd
-sudo systemctl disable rpi-eeprom-update
-sudo systemctl disable systemd-timesyncd.service
+
+systemctl disable keyboard-setup.service
+systemctl disable dphys-swapfile.service
+systemctl disable avahi-daemon.service
+systemctl disable sys-kernel-debug.mount
+systemctl disable raspi-config.service
+systemctl disable systemd-udev-trigger.service
+systemctl disable rpi-eeprom-update.service
+systemctl disable rsyslog.service
+systemctl disable systemd-journald.service
+systemctl disable systemd-fsck-root.service
+systemctl disable systemd-logind.service
+systemctl disable bluetooth.service
+systemctl disable hciuart.service
 
 # display backgroudn application
 sudo ps -ax | grep python
