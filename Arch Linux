@@ -18,4 +18,5 @@ Followup to myself: I repeated the "pacman-key --init" and the "pacman-key --pop
 and now I am able to install packages. So I guess I just screwed something up in originally setting up keys.
 
 
+rpi initrd busybox
 https://www.raspberrypi.org/forums/viewtopic.php?t=7626
