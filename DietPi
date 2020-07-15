@@ -1,0 +1,15 @@
+***********************************************************************
+
+***********************************************************************
+***********************************************************************
+#install python3
+#3.7 maybe better
+https://triradiate.wordpress.com/2018/01/22/python-3-6-install-on-dietpi/
+
+#apt error
+https://askubuntu.com/questions/1096930/sudo-apt-update-error-release-file-is-not-yet-valid
+
+#install bme280 lib failed
+https://raspberrypi.stackexchange.com/questions/38660/what-can-i-remove-from-raspbian-to-boot-faster
+@@@@@@@@@@sudo apt-get install libffi-dev
+
