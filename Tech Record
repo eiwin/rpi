@@ -1,4 +1,8 @@
-RPI  
+RPI
+#Protect your Raspberry PI SD card, use Read-Only filesystem
+https://hallard.me/raspberry-pi-read-only/
+
+
 systemd
 https://www.samplerbox.org/article/fastbootrpi
 https://www.digikey.ca/en/maker/projects/how-to-run-a-raspberry-pi-program-on-startup/cc16cb41a3d447b8aaacf1da14368b13?utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=Dynamic%20Search_EN_RLSA&utm_term=&productid=&gclid=EAIaIQobChMI_d-dlL7D6gIVy9SzCh0tdgv9EAAYASAAEgK18_D_BwE
