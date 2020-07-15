@@ -12,4 +12,5 @@ https://askubuntu.com/questions/1096930/sudo-apt-update-error-release-file-is-no
 #install bme280 lib failed
 https://raspberrypi.stackexchange.com/questions/38660/what-can-i-remove-from-raspbian-to-boot-faster
 @@@@@@@@@@sudo apt-get install libffi-dev
-
+#full steps
+https://www.instructables.com/id/Setup-Raspberry-Pi-Using-Diet-Pi-Without-Monitor-o/
