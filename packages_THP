@@ -56,7 +56,7 @@ sudo systemctl enable thpm_welcome.service
 #/lib/systemd/system
 ########################welcom########################
 [Unit]
-Description=THP Monitor---------------------------------------
+Description=THP Monitor Welcome----------------------
 #After=dev-serial1.device
 #Before=local-fs.target
 DefaultDependencies=false
@@ -64,7 +64,7 @@ DefaultDependencies=false
 [Service]
 WorkingDirectory=/home/pi/
 User=root
-ExecStart=python3 /home/pi/py/thp_monitor/script/com.main/run/welcom.py
+ExecStart=python3 /home/pi/py/thp_monitor/script/com.main/run/welcome.py
 #Restart=always
 
 [Install]
