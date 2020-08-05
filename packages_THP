@@ -1,3 +1,11 @@
+######################################################
+########################workpath######################
+######################################################
+/home/pi/py
+
+######################################################
+########################Packages######################
+######################################################
 # GPIO
 sudo apt-get install rpi.gpio
 
@@ -10,9 +18,77 @@ sudo apt-get install python3-pip
 # bme280
 sudo pip3 install adafruit-circuitpython-bme280
 
+######################################################
+########################Enalbe RTC####################
+######################################################
+https://thepihut.com/blogs/raspberry-pi-tutorials/17209332-adding-a-real-time-clock-to-your-raspberry-pi
 
+sudo i2cdetect -y 1
+The RTC module must be loaded by the kernel by running:
+    sudo modprobe rtc-ds1307
+Now you need to be running as the super user; type in:
+    sudo bash
+and then, if you have a Rev.2 Raspberry Pi or later:
+    echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
+Or if you have the older Rev.1 Raspberry Pi, use:
+    echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-0/new_device
+Type exit to stop being the 'root' user.
+Check the time on the RTC device using:
+    sudo hwclock -r
+Run sudo hwclock -w to write the system time to the RTC board.
+You will need to add the RTC kernel module to the file /etc/modules so it is loaded when the Raspberry Pi boots. 
+In a terminal window run sudo nano /etc/modules and add rtc-ds1307 at the end of the file
+Next you will need to add the DS1307 device creation at boot by editing the /etc/rc.local file by running
+    sudo nano /etc/rc.local
+and add the following lines to the file:
+    echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
+    sudo hwclock -s
+    date
+Just before the exit 0. 
+
+######################################################
+########################Enable Service################
+######################################################
+sudo systemctl enable thpm_welcome.service
+#/lib/systemd/system
+########################welcom########################
+[Unit]
+Description=THP Monitor---------------------------------------
+#After=dev-serial1.device
+#Before=local-fs.target
+DefaultDependencies=false
+
+[Service]
+WorkingDirectory=/home/pi/
+User=root
+ExecStart=python3 /home/pi/py/thp_monitor/script/com.main/run/welcom.py
+#Restart=always
+
+[Install]
+WantedBy=local-fs.target
+#####################################################
+
+sudo systemctl enable thpm_main.service
+#/lib/systemd/system
+#######################main##########################
+[Unit]
+Description=THP Monitor Main--------------------------------
+After=multi-user.target
+#Before=local-fs.target
+#DefaultDependencies=false
+
+[Service]
+WorkingDirectory=/home/pi/
+User=root
+ExecStart=python3 /home/pi/py/thp_monitor/script/com.main/run/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+#####################################################
 
 -------------------------------------------------------
+This is option for speaker. pigpiod is needed as PWM control
 
 Issue: i2cdetect command not found
 sudo apt-get update
