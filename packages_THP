@@ -128,7 +128,7 @@ systemctl disable hciuart.service
  
  4. static ip address.
 run systemctl disable dhcpcd.service to disable dhcp, but modify /etc/network/interfaces as follows firstls:
-source-directory /etc/network/interfaces.d
+source-directory /etc/network/interfaces
 allow-hotplug wlan0
 iface wlan0 inet static
 address 192.168.51.106
