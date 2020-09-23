@@ -5,18 +5,18 @@
 
 # update to the latest version
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 ######################################################
 ########################Packages######################
 ######################################################
 # GPIO
-sudo apt-get install rpi.gpio
+sudo apt-get install rpi.gpio -y
 
 # serial
-sudo apt-get install python3-serial
+sudo apt-get install python3-serial -y
 
 # pip3
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip -y
 
 # bme280
 sudo pip3 install adafruit-circuitpython-bme280
@@ -115,7 +115,8 @@ boot_delay=0
 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=PARTUUID=32e07f87-02 rootfstype=ext4 elevator=deadline fsck.repair=yes quiet rootwait
 
  3. disable the services that are not needed
- systemctl disable keyboard-setup.service
+sudo bash
+systemctl disable keyboard-setup.service
 systemctl disable dphys-swapfile.service
 systemctl disable avahi-daemon.service
 systemctl disable sys-kernel-debug.mount
