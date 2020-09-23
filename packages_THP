@@ -97,6 +97,9 @@ WantedBy=multi-user.target
 ######################################################
 ########################Make boot faster##############
 ######################################################
+ 0.change baudrate of I2C bus. Because 10k is perfect for long distance
+ dtparam=i2c_arm=on,i2c_arm_baudrate=10000
+ 
  1. Editing the /boot/config.txt with the following changes:
 #disable audio
 dtparam=audio=off
